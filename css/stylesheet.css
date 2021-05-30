@@ -1,3 +1,16 @@
 body{
-    background-color: #eac194;
+    background-color: #ffefc5;
+}
+
+/*.grid-container{
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main main right'
+        'menu footer footer footer footer footer';
+    grid-gap: 40px;
+}*/
+
+h1{
+    color: white;
 }
