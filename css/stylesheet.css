@@ -31,5 +31,7 @@ box{
 }
 
 invis{
+    padding: 5px 5px;
+    border: solid;
     visibility: hidden;
 }
