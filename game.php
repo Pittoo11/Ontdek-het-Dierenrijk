@@ -19,14 +19,16 @@
 
 <body>
     <img src="images/vis.png" width="750" height="750">
+
     <section class="word">
-        <box>v</box>  <box>s</box>
+        <box>v</box> <box id = "B1"></box> <box>s</box>
     </section>
+
+    <button type="button" id="btn">i</button>
+    <script type="text/javascript" src="jS/test.js"></script>
 </body>
 
 
 <footer>
 
 </footer>
-
-<invis>i</invis>
