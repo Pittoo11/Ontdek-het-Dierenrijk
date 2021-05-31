@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'SchoolKX_new.ttf';
+    src: url('../fonts/SchoolKX_new.ttf');
+}
+html {
+    font-family: 'SchoolKX_new.ttf';
+    src: url('../fonts/SchoolKX_new.ttf');
+
+}
+
 body{
     background-color: #ffefc5;
 }
@@ -12,5 +22,14 @@ body{
 }*/
 
 h1{
-    color: white;
+
+}
+
+box{
+    padding: 5px 5px;
+    border: solid;
+}
+
+invis{
+    visibility: hidden;
 }
