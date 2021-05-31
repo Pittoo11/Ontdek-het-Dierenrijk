@@ -6,6 +6,7 @@ html {
     font-family: 'SchoolKX_new.ttf';
     src: url('../fonts/SchoolKX_new.ttf');
 
+
 }
 
 body{
@@ -26,7 +27,34 @@ h1{
 }
 
 box{
-    padding: 5px 5px;
+    padding: 10px 10px;
+    margin: 10px;
     border: solid;
+    background-color: white;
+    position: relative;
+    left: 1180px;
+    bottom: 240px;
+    font-size: xxx-large;
 }
 
+#B1{
+    padding: 10px 15px;
+}
+
+button{
+    padding: 20px 20px;
+    margin: 10px;
+    border: solid;
+    background-color: lightgrey;
+    position: relative;
+    left: 1100px;
+    bottom: 460px;
+    font-size: xxx-large;
+
+}
+
+img{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
