@@ -27,7 +27,7 @@ function button() {
     btn.innerHTML = "volgende";
     btn.type = "submit";
     btn.addEventListener("click", function () {
-    location.href = "maan.html"
+    location.href = "collage.html"
     })
     document.body.appendChild(btn)
 }

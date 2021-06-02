@@ -20,7 +20,7 @@ function removeBtn(number){
 
 
 document.getElementById("btn4").addEventListener("click", function () {
-    document.getElementById("B1").innerHTML = "aa";
+    document.getElementById(    "B1").innerHTML = "aa";
     removeBtn(4)
     removeBtn(1)
     removeBtn(2)
