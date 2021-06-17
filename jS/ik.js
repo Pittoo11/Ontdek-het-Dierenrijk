@@ -1,33 +1,9 @@
-/*window.addEventListener('load', init);*/
-let words = [
-    {
-        word: "vis",
-        image: "../images/vis.png",
-        test: ["v", "", "s"],
-        letters: ["a", "i", "u"]
-    }
-]
-
-/*let game = document.getElementById("game");
-let box = document.getElementById("B1")
-function init() {
-    createText();
-}
-function createText(){
-    let gameCard = document.createElement('div');
-    gameCard.classList.add('gameCard');
-    game.appendChild(gameCard);
-    let title = document.createElement('h1');
-    title.innerText = "Titelscherm";
-    gameCard.appendChild(title);
-}
- */
 function button() {
     const btn = document.createElement("button");
-    btn.innerHTML = "volgende";
+    btn.innerHTML = "KLAAR";
     btn.type = "submit";
     btn.addEventListener("click", function () {
-    location.href = "collage.html"
+        location.href = "kat.html"
     })
     document.body.appendChild(btn)
 }
@@ -43,9 +19,9 @@ function removeBtn(number){
 
 
 
-document.getElementById("btn0").addEventListener("click", function () {
+document.getElementById("btn4").addEventListener("click", function () {
     document.getElementById("B1").innerHTML = "i";
-    removeBtn(0)
+    removeBtn(4)
     removeBtn(1)
     removeBtn(2)
     removeBtn(3)

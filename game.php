@@ -26,8 +26,6 @@
 
     <section>
         <button type="button" id="btn1">a</button> <button type="button" id="btn0">i</button> <button type="button" id="btn2">o</button> <button type="button" id="btn3">e</button>
-    </section>
-
 
     <script type="text/javascript" src="jS/test.js"></script>
 </body>
