@@ -45,5 +45,11 @@ msg.pitch = 0; // From 0 to 2
 msg.text = message;
 msg.lang = 'nl';
 speechSynthesis.speak(msg);
+
+        function playclip()
+        {
+            var audio = document.getElementsByTagName("audio")[0];
+            audio.play();
+        }
 }
 </script>

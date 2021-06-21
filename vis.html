@@ -15,14 +15,14 @@
 
 
 <body>
-<img src="images/vis.png" width="750" height="750" >
+<img onmouseover= speaks(`vis`) src="images/vis.png" width="750" height="750" >
 
 <section class="word">
     <box>v</box><box id = "B1"></box> <box>s</box>
 </section>
 
 <section>
-    <button type="button" id="btn1">e</button> <button type="button" id="btn2">aa</button> <button type="button" id="btn4">i</button> <button type="button" id="btn3">o</button>
+    <button onmouseover = play("E.mp3") type="button" id="btn1">e</button> <button onmouseover = play("AA.mp3") type="button" id="btn2">aa</button> <button onmouseover = play("I.mp3") type="button" id="btn4">i</button> <button onmouseover = play("O.mp3") type="button" id="btn3">o</button>
 </section>
 
 
@@ -33,3 +33,26 @@
 <footer>
 
 </footer>
+
+<script>
+
+
+    function play(mp3) {
+        let audio = new Audio("phonetics/"+ mp3);
+        audio.play();
+    }
+
+    function speaks (message) {
+        let msg = new SpeechSynthesisUtterance();
+        let voices = window.speechSynthesis.getVoices();
+        msg.volume = 1; // From 0 to 1
+        msg.rate = 1; // From 0.1 to 10
+        msg.pitch = 0; // From 0 to 2
+        msg.text = message;
+        msg.lang = 'nl';
+        speechSynthesis.speak(msg);
+    }
+
+
+
+</script>
