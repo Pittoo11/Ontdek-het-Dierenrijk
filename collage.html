@@ -10,6 +10,7 @@
             text-align: center;
             width: 50px;
             height: 50px;
+
         }
         #mydiv1 {
             position: absolute;
@@ -17,6 +18,7 @@
             text-align: center;
             width: 90px;
             height: 90px;
+
         }
         #mydiv2 {
             position: absolute;
@@ -24,6 +26,7 @@
             text-align: center;
             width: 120px;
             height: 120px;
+
 
         }
         #mydiv3 {
@@ -33,6 +36,7 @@
             width: 200px;
             height: 200px;
 
+
         }
 
     </style>
@@ -40,20 +44,25 @@
 <body>
 
 <div>
-    <img src="images/roos.png"  id ="mydiv">
-    <img src="images/vis.png"  id="mydiv1">
-</div>
-<div>
+    <img src="images/ik.png"  id ="mydiv1">
     <img src="images/moon.png"  id ="mydiv2">
-    <img src="images/ik.png" id ="mydiv3">
+    <img src="images/roos.png" id ="mydiv3">
+    <img src="images/vis.png"  id ="mydiv">
 </div>
 
 <script>
-    //Make the DIV element draggagle:
+    //Make the DIV element draggable:
     dragElement(document.getElementById("mydiv"));
     dragElement(document.getElementById("mydiv1"));
     dragElement(document.getElementById("mydiv2"));
     dragElement(document.getElementById("mydiv3"));
+    dragElement(document.getElementById("mydiv4"));
+    dragElement(document.getElementById("mydiv5"));
+    dragElement(document.getElementById("mydiv6"));
+    dragElement(document.getElementById("mydiv7"));
+    dragElement(document.getElementById("mydiv8"));
+
+
 
     function dragElement(elmnt) {
         var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -92,10 +101,24 @@
             document.onmousemove = null;
         }
     }
+    function inVis(n) {
+        let x = document.getElementById("mydiv"  + n );
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        }
+
+        function addImage(image , n) {
+            this.img = document.createElement("img").setAttribute("id", "mydiv" + n);
+            this.img.src = image;
+            src = document.getElementById("div");
+            src.appendChild(this.img)
+        }
+
+    }
 </script>
 
 <form method="POST" action="maan.html">
-    <input type="image" name="submit" src="http://cdn.onlinewebfonts.com/svg/download_423359.png"  alt="Submit" style="width: 50px;" />
+    <input type="image" name="submit" src="http://cdn.onlinewebfonts.com/svg/download_423359.png"  alt="Submit" style="width: 50px" onclick="inVis(1)"/>
 </form>
 
 </body>

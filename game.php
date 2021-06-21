@@ -18,10 +18,10 @@
 
 
 <body>
-    <img src="images/vis.png" width="750" height="750" >
+    <img src="images/ik.png" width="750" height="750" >
 
     <section class="word">
-        <box>v</box> <box id = "B1"></box> <box>s</box>
+        <box id = "B1"></box> <box>k</box>
     </section>
 
     <section>
