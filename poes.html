@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/stylesheet.css"/>
+</head>
+
+
+<header>
+
+</header>
+
+
+<body>
+
+<img onmouseover= speaks(`poes`) src="images/poes.png" width="750" height="750" >
+
+<section class="word">
+  <box id = "B1"></box> <box>p</box>
+</section>
+
+<section>
+  <button onmouseover = play("AA.mp3") type="button" id="btn4">aa</button> <button onmouseover = play("EE.mp3") type="button" id="btn2">ee</button> <button onmouseover = play("A.mp3") type="button" id="btn1">a</button> <button onmouseover = play("OO.mp3") type="button" id="btn3">oo</button>
+</section>
+
+
+<script type="text/javascript" src="jS/poes.js"></script>
+</body>
+
+
+<footer>
+
+</footer>
+
+<script>
+
+
+  function play(mp3) {
+    let audio = new Audio("phonetics/"+ mp3);
+    audio.play();
+  }
+
+  function speaks (message) {
+    let msg = new SpeechSynthesisUtterance();
+    let voices = window.speechSynthesis.getVoices();
+    msg.volume = 1; // From 0 to 1
+    msg.rate = 1; // From 0.1 to 10
+    msg.pitch = 0; // From 0 to 2
+    msg.text = message;
+    msg.lang = 'nl';
+    speechSynthesis.speak(msg);
+  }
+
+
+
+</script>
