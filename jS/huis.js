@@ -3,7 +3,7 @@ function button() {
     btn.innerHTML = "volgende";
     btn.type = "submit";
     btn.addEventListener("click", function () {
-        location.href = "collage3.html"
+        location.href = "collage8.html"
     })
     document.body.appendChild(btn)
 }

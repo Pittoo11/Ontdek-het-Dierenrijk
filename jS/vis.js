@@ -31,20 +31,20 @@ document.getElementById("btn4").addEventListener("click", function () {
 
 
 document.getElementById('btn1').addEventListener("click", function () {
-        alert("Niet de goede, probeer het nog een keer")
+
         removeBtn(1)
 
     }
 )
 
 document.getElementById('btn2').addEventListener("click", function () {
-        alert("Niet de goede, probeer het nog een keer")
+
         removeBtn(2)
 
     }
 )
 document.getElementById('btn3').addEventListener("click", function () {
-        alert("Niet de goede, probeer het nog een keer")
+
         removeBtn(3)
 
     }

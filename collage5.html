@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css/collage4.css"/>
+  <link rel="stylesheet" href="css/collage5.css"/>
   <meta charset="UTF-8">
   <style>
     #mydiv {
@@ -34,6 +34,14 @@
       height: 200px;
 
     }
+    #mydiv4 {
+      position: absolute;
+      z-index: 9;
+      text-align: center;
+      width: 200px;
+      height: 200px;
+
+    }
 
   </style>
 
@@ -46,6 +54,7 @@
 <div>
   <img src="images/maan.png" id ="mydiv2">
   <img src="images/ik.png" id ="mydiv3">
+  <img src="images/aap.png" id ="mydiv4">
 </div>
 
 <script>
@@ -54,6 +63,8 @@
   dragElement(document.getElementById("mydiv1"));
   dragElement(document.getElementById("mydiv2"));
   dragElement(document.getElementById("mydiv3"));
+  dragElement(document.getElementById("mydiv4"));
+
 
   function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -94,7 +105,7 @@
   }
 </script>
 
-<form method="POST" action="aap.html">
+<form method="POST" action="boom.html">
   <input type="image" name="submit" src="https://pngimg.com/uploads/red_arrow/red_arrow_PNG1.png"  alt="Submit" style="width: 200px; left: 1600px;  position:absolute;"/>
 </form>
 
