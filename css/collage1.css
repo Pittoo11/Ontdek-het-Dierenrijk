@@ -3,7 +3,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;*/
 
-    background: url("../images/test2.png") no-repeat center center fixed;
+    background: url("../background-images/test2.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
