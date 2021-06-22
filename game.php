@@ -18,14 +18,14 @@
 
 
 <body>
-    <img src="images/ik.png" width="750" height="750" >
+    <img onmouseover= speaks(`ik`) src="images/ik.png" width="750" height="750" >
 
     <section class="word">
         <box id = "B1"></box> <box>k</box>
     </section>
 
     <section>
-        <button type="button" id="btn1">a</button> <button type="button" id="btn0">i</button> <button type="button" id="btn2">o</button> <button type="button" id="btn3">e</button>
+        <button onmouseover = play("A.mp3") type="button" id="btn1">a</button> <button onmouseover = play("I.mp3") type="button" id="btn0">i</button> <button onmouseover = play("O.mp3") type="button" id="btn2">o</button> <button onmouseover = play("E.mp3") type="button" id="btn3">e</button>
 
     <script type="text/javascript" src="jS/ik.js"></script>
 </body>
@@ -35,21 +35,25 @@
 
 </footer>
 
-<script> function speaks (message) {
-let msg = new SpeechSynthesisUtterance();
-let voices = window.speechSynthesis.getVoices();
-msg.voice = voices[10];
-msg.volume = 1; // From 0 to 1
-msg.rate = 0.2; // From 0.1 to 10
-msg.pitch = 0; // From 0 to 2
-msg.text = message;
-msg.lang = 'nl';
-speechSynthesis.speak(msg);
+<script>
 
-        function playclip()
-        {
-            var audio = document.getElementsByTagName("audio")[0];
-            audio.play();
-        }
-}
+
+    function play(mp3) {
+        let audio = new Audio("phonetics/"+ mp3);
+        audio.play();
+    }
+
+    function speaks (message) {
+        let msg = new SpeechSynthesisUtterance();
+        let voices = window.speechSynthesis.getVoices();
+        msg.volume = 1; // From 0 to 1
+        msg.rate = 1; // From 0.1 to 10
+        msg.pitch = 0; // From 0 to 2
+        msg.text = message;
+        msg.lang = 'nl';
+        speechSynthesis.speak(msg);
+    }
+
+
+
 </script>
